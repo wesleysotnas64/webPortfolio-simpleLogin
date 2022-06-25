@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>Simple Login</title>
+    
 </head>
 <body>
-    <div class="login">
+    <div class="login" onclick="detect()">
         <div class="login-top box">
             <h1>Login</h1>
         </div>
         <div class="login-mid box">
             <div class="inputs">
                 <div class="label-input">
-                    <label for="user">User</label>
-                    <input type="text" name="user">
+                    <label for="userInput" id="userLabel">User</label>
+                    <input type="text" id="userInput">
                 </div>
                 <div class="label-input">
-                    <label for="passwd">Password</label>
-                    <input type="password" name="passwd">
+                    <label for="passwordInput" id="passwordLabel">Password</label>
+                    <input type="password" id="passwordInput" >
                 </div>
             </div>
             <div class="buttons">
@@ -40,8 +41,6 @@
             </p>    
         </div>
     </div>
-
     <script src="./script.js"></script>
-
 </body>
 </html>
